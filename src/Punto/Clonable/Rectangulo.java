@@ -1,10 +1,13 @@
 package Punto.Clonable;
 
 public class Rectangulo implements Cloneable {
+
     // Punto origen, objeto de la clase punto
     private PuntoClo origen;
+
     //dimensiones
     private int ancho, alto;
+
     //Contructores
     public Rectangulo(){
         this.origen=new PuntoClo(0,0);
@@ -25,7 +28,8 @@ public class Rectangulo implements Cloneable {
         catch (CloneNotSupportedException e){
             System.out.println("no se ha podido clonar el rectángulo");
         }
-//conamos el objeto punto del rectángulo
+
+    //conamos el objeto punto del rectángulo
         obj.origen = (PuntoClo)obj.origen.clone();
         return obj;
     }
@@ -37,7 +41,8 @@ public class Rectangulo implements Cloneable {
         catch (CloneNotSupportedException e){
             System.out.println("no se ha podido clonar el rectángulo");
         }
-//conamos el objeto punto del rectángulo
+
+    //clonamos el objeto punto del rectángulo
         return obj;
     }
 
