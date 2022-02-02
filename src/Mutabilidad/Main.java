@@ -21,10 +21,12 @@ public class Main {
 
         Integer a = 3235;
         Integer b = a;
+        //a++; con esto da falso ambos
         Boolean e = (a==b);
         System.out.println(e);
         Boolean f = a.equals(b);
         System.out.println(f);
+
 
 
     }
